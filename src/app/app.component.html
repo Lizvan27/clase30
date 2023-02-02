@@ -1,0 +1,30 @@
+<div class="row col-5 m-5 p-3 mb-2 bg-success text-white">
+  <h2>Formulario Registro</h2>
+  <form [formGroup]="formRegistro" (ngSubmit)="registrar()">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" name="nombre" id="nombre" formControlName="nombre" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="text" name="apellido" id="apellido" formControlName="apellido" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" name="email" id="email" formControlName="email" class="form-control">
+    </div> 
+    <div class="mb-3">
+      <label for="website" class="form-label">Website</label>
+      <input type="text" name="website" id="website" formControlName="" class="form-control">
+    </div> 
+
+    <div class="mb-3">
+      <button (click)="registrar()" class="btn btn-primary">Registrar</button>
+    </div>
+   
+  </form>
+</div>
+
+
+
+<router-outlet></router-outlet>
